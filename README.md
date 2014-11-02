@@ -41,9 +41,9 @@ Retrieve components
 -------------------
 
 ```javascript
-var components = entity.getComponents(ComponentType); // Retrieve an array containing all components that match the type
-var component = entity.getComponents(ComponentType, true); // Retrieve only the first component to match the type
-var component = entity.getCmp(ComponentType); // Shorthand for the above line
+var components = entity.getComponents(MyComponentSubclass); // Retrieve an array containing all components that match the class
+var component = entity.getComponents(MyComponentSubclass, true); // Retrieve only the first component to match the class
+var component = entity.getCmp(MyComponentSubclass); // Shorthand for the above line
 ```
 
 Events
@@ -51,8 +51,8 @@ Events
 
 Components have three built-in events.
 
-- **added()** is called just after **addComponent()**
-- **update()** is called just after the component's **update()** call
-- **draw()**, like **updated()**, is called just after the component's draw() call
+- _added()_ is called just after _addComponent()_
+- _update()_ is called just after the component's _update()_ call
+- _draw()_, like _updated()_, is called just after the component's _draw()_ call
 
 
