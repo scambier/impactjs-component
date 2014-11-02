@@ -16,7 +16,7 @@ Usage
 Create your components by subclassing the Component class, and require them in your entities, like any other dependency.
 
 Basically, your components are defined like any other object.
-When you inject them inside your objects, you may pass a _settings_ object that will override default values
+When you inject them inside your entities, you may pass a _settings_ object that will override default values
 of the component's attributes. The _settings_ object cannot be used to create new attributes or overwrite functions.
 
 This project is also provided with a simple example: an Entity (a red square) is given a "clickable" component, 
