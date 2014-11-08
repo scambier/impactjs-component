@@ -15,9 +15,11 @@ Usage
 
 Create your components by subclassing the Component class, and require them in your entities, like any other dependency.
 
-Basically, your components are defined like any other object.
-When you inject them inside your objects, you may pass a _settings_ object that will override default values
-of the component's attributes. The _settings_ object cannot be used to create new attributes or overwrite functions.
+Basically, your components are defined like any other Impact _ig.Class_. You may pass a _settings_ object at initialization 
+that will override default values. 
+The _settings_ object cannot be used to create new attributes or overwrite functions.  
+Once the instance is created, simply inject it into your entity.
+
 
 This project is also provided with a simple example: an Entity (a red square) is given a "clickable" component, 
 that outputs a console.log each time the left mouse button is pressed down.
@@ -32,8 +34,8 @@ Link/unlink a component to an entity
 ------------------------------------
 
 ```javascript
-var component = new MyComponentSubclass());
-entity.addComponent(component, parameters);
+var component = new MyComponentSubclass(parameters));
+entity.addComponent(component);
 entity.removeComponent(component);
 ```
 
