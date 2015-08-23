@@ -51,7 +51,7 @@ var component = entity.getCmp(MyComponentSubclass); // Shorthand for the above l
 Events
 ------
 
-Components have three built-in events.
+Components have four built-in events.
 
 - `added()` is called just after `addComponent()`
 - `update()` is called just after the component's `update()` call
