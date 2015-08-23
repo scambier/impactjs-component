@@ -55,6 +55,6 @@ Components have four built-in events.
 
 - `added()` is called just after `addComponent()`
 - `update()` is called just after the component's `update()` call
-- `draw()`, like `updated()`, is called just after the component's `draw()` call
+- `draw()`, like `update()`, is called just after the component's `draw()` call
 - `drawOver()` will be called after the `ig.game` `draw()` function. Useful to draw UI elements like health bars.
 
